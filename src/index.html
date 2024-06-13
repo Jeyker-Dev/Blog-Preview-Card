@@ -5,70 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="./dist/app.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
   
   <title>Frontend Mentor | Blog preview card</title>
-
 </head>
 <body class="bg-yellow-300">
 
-<!-- Container Card Body   -->
-  <main class="containe bg-white mx-auto mt-40 sm:mt-50 md:mt-60 w-11/12 sm:w-4/5 md:w-4/12 rounded-2xl border border-black border-b-8 border-r-8">
+<!-- Container Card Body -->
+<main class="container bg-white mx-auto mt-40 sm:mt-50 md:mt-60 w-11/12 sm:w-4/5 md:w-5/12 lg:w-4/12 rounded-2xl border border-black border-b-4 border-r-4 transition-transform transform focus-within:scale-105 focus-within:border-b-8 focus-within:border-r-8">
 
-<!-- Container Image   -->
-    <div>
+  <!-- Container Image -->
+  <div>
+    <img class="object-cover w-4/5 mx-auto my-3 rounded-xl shadow-md" src="./img/illustration-article.svg" alt="Imagen Ilustracion">
+  </div>
+  <!-- Here End Container Image -->
 
-      <img class="object-cover w-4/5 mx-auto my-3 rounded-xl shadow-md" src="./img/illustration-article.svg" alt="Imagen Ilustracion">
+  <!-- Container First Text -->
+  <div class="flex flex-col">
+    <span class="w-1/4 bg-yellow-300 font-bold text-center ml-8 my-2 p-1 text-sm rounded-sm shadow-sm">
+      Learning
+    </span>
+    <span class="text-sm font-semibold ml-6 mb-3">
+      Published 21 Dec 2023
+    </span>
+  </div>
+  <!-- Here End Container First Text -->
 
-    </div>
-<!-- Here End Container Image   -->
+  <!-- Container Subtitle and Text -->
+  <div>
+    <a href="#" class="block text-center font-bold text-xl lg:text-2xl my-2 ml-6 sm:ml-8 cursor-pointer focus:text-yellow-300 transition">
+      HTML & CSS foundations
+    </a>
+    <p class="text-center my-4 text-gray-500 text-sm">
+      These languages are the backbone of every website, defining structure, content, and presentation.
+    </p>
+  </div>
+  <!-- Here End Container Subtitle and Text -->
 
-<!-- Container First Text   -->
-    <div class="flex flex-col">
-
-      <span class="w-1/4 bg-yellow-300 font-bold text-center ml-8 my-2 p-1 text-sm rounded-sm shadow-sm">
-        Learning
-      </span>
-
-      <span class="text-sm font-semibold ml-6 mb-3">
-        Published 21 Dec 2023
-      </span>
-    </div>
-<!-- Here End Container First Text   -->
-
-<!-- Container Subtitle and Text   -->
-    <div>
-      
-      <a class="text-center font-bold text-2xl my-2 ml-6 cursor-pointer hover:text-yellow-300 transition">
-        HTML & CSS foundations
-      </a>
-      <p class="text-center my-4 text-gray-500 text-sm">
-        These languages are the backbone of every website, defining structure, content, and presentation.
-      </p>
-
-    </div>
-<!-- Here End Container Subtitle and Text   -->
-
-<!-- Container Image and Name   -->
+  <!-- Container Image and Name -->
   <div class="flex justify-start items-center my-3">
-
     <img class="object-cover ml-4" src="./img/image-avatar.webp" alt="Imagen Perfil">
     <span class="text-center font-bold ml-3">Greg Hooper</span>
-
   </div>
-<!-- Here End Container Subtitle and Text   -->
-  </main>
-<!-- Here End Container Card Body   -->
+  <!-- Here End Container Image and Name -->
+</main>
+<!-- Here End Container Card Body -->
 
-<!-- Footer   -->
-  <footer class="containe bg-white mx-auto mt-10 w-11/12 sm:w-4/5 md:w-4/12 rounded-2xl border border-black border-b-8 border-r-8">
+<!-- Footer -->
+<footer class="container bg-white mx-auto mt-10 w-11/12 sm:w-4/5 md:w-4/12 rounded-2xl border border-black border-b-8 border-r-8">
+  <div class="text-center p-4 font-bold">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Jeyker Mendoza</a>.
+  </div>
+</footer>
+<!-- Here End Footer -->
 
-    <div class="text-center p-4 font-bold">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Jeyker Mendoza</a>.
-    </div>
-
-  </footer>
-<!-- Here End Footer   -->
 </body>
 </html>
